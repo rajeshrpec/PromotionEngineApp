@@ -11,7 +11,15 @@ namespace UnitTestProject
         [TestMethod]
         public void ScenarioA_Test()
         {
-            
+             List<Product> product =new List<Product>();
+            ProductService.Add(new Product(){Id="A"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="C"});
+
+            ProductService productService=new ProductService();
+            int totalPrice= productService.GetTotalPrice(products);
+
+            Assert.AreEqual<int>(100,totalPrice);
         }
 
         [TestMethod]
