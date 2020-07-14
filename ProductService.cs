@@ -3,10 +3,10 @@ namespace PromotionEngine
     public class ProductService:IProductService
     {
     
-            int priceofA=50;
-            int priceofB=30;
-            int priceofC=20;
-            int priceofD=15;
+            private int priceofA=50;
+            private int priceofB=30;
+            private int priceofC=20;
+            private int priceofD=15;
             
     
         public int GetTotalPrice( List<Products> products)
