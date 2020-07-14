@@ -3,12 +3,21 @@ namespace PromotionEngine
     public class ProductService:IProductService
     {
     
+            int priceofA=50;
+            int priceofB=30;
+            int priceofC=20;
+            int priceofD=15;
+            
+    
         public int GetTotalPrice( List<Products> products)
         {
             int counterA=0;
             int counterB=0;
             int counterC=0;
             int counterD=0;
+            
+            int totalPriceofC=0;
+            int totalPriceofD=0;
             
             foreach (Product product in products)
             {
