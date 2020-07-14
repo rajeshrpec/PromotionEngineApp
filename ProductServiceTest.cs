@@ -84,7 +84,7 @@ namespace UnitTestProject
             int totalPrice= productService.GetTotalPrice(products);
             
             //Assert
-            Assert.AreEqual<int>(280,totalPrice);
+            Assert.AreNotEqual<int>(280,totalPrice);
         }
     }
 }
