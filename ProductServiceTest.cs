@@ -47,7 +47,22 @@ namespace UnitTestProject
         [TestMethod]
         public void ScenarioC_Test()
         {
-            
+            List<Product> product =new List<Product>();
+            ProductService.Add(new Product(){Id="A"});
+            ProductService.Add(new Product(){Id="A"});
+            ProductService.Add(new Product(){Id="A"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="B"});
+            ProductService.Add(new Product(){Id="C"});
+            ProductService.Add(new Product(){Id="D"});
+
+            ProductService productService=new ProductService();
+            int totalPrice= productService.GetTotalPrice(products);
+
+            Assert.AreEqual<int>(280,totalPrice);
         }
     }
 }
