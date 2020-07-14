@@ -40,7 +40,7 @@ namespace PromotionEngine
 
             }
             
-            nt totalPriceofA=(counterA/3)*130+(counterA%3+priceofA);
+            int totalPriceofA=(counterA/3)*130+(counterA%3+priceofA);
             int totalPriceofB=(counterB/2)*45+(counterB%2+priceofB);
             
             if(counterC==1 && counterD==1)
