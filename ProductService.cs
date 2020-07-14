@@ -30,6 +30,22 @@ namespace PromotionEngine
                 }
 
             }
+            
+            nt totalPriceofA=(counterA/3)*130+(counterA%3+priceofA);
+            int totalPriceofB=(counterB/2)*45+(counterB%2+priceofB);
+            
+            if(counterC==1 && counterD==1)
+            {
+                totalPriceofC=counterC*priceofC-5;
+                totalPriceofD=counterD*priceofD;
+            }
+            else
+            {
+                totalPriceofC=counterC*priceofC;
+                totalPriceofD=counterD*priceofD;
+            }
+
+            return totalPriceofA+totalPriceofB+totalPriceofC+totalPriceofD;
         }
     
     }
